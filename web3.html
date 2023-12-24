@@ -1,0 +1,93 @@
+<html>\
+    <head>
+<title>Website design using html and css</title>
+<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<div class="main">
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png">
+        </div>
+<div class="nav-links">
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Web3</a></li>
+    <li><a href="#">Accessories</a></li>
+    <li><a href="#">Cart</a></li>
+</ul>
+</div>
+    </nav>
+   
+    <div class="information">
+        <div class="overlay"></div>
+        <img src="images/Web3 Image.webp" class="mobile">
+        <div id="circle">
+            <div class="feature one">
+                <img src="images/[removal.ai]_e5ae0110-1348-4615-95a6-a1483eb30fb1-decentralization2-png.png">
+                <div>
+                    <h1>Decentralization</h1>
+                    <p>It uses decentralized networks where <br> is distributed across many nodes.</p>
+                </div>
+            </div>
+            <div class="feature two">
+                <img src="images/[removal.ai]_6d5f73f6-e0de-46a3-832e-c0f127962767-blockchain-technology-png.png">
+                <div>
+                    <h1>BlockChain <br>Technology</h1>
+                    <p>It enables peer-to-peer transactions.</p>
+                </div>
+            </div>
+            <div class="feature three">
+                <img src="images/interroptability.png.png">
+                <div>
+                    <h1>interroptability</h1>
+                    <p> facilitates the exchange of assets and <br> across varioaus platforms.</p>
+                </div>
+                
+            </div>
+            <div class="feature four">
+                <img src="images/[removal.ai]_d477ba27-f771-4b87-a991-bb38fa48db48-user-control-and-privacy-png.png">
+                <div>
+                    <h1>User Privacy</h1>
+                    <p>Users can have ownership of their <br>personal information</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <div class="controls">
+        <img src="images/[removal.ai]_2045fae1-a162-4973-88d6-0793440bf424-arrow-up.png" id="upBtn">
+        <h3>Features</h3>
+        <img src="images/[removal.ai]_bbeeeeb2-9eeb-467b-9cf3-2ccf7d72557f-image.png" id="downBtn">
+      </div>
+</div>
+
+<script>
+var circle = document.getElementById("circle");
+var upBtn = document.getElementById("upBtn");
+var downBtn = document.getElementById("downBtn");
+
+var rotateValue = circle.style.transform;
+var rotateSum;
+
+upBtn.onclick = function()
+{
+    rotateSum = rotateValue + "rotate(-90deg)";
+    circle.style.transform = rotateSum;
+    rotateValue = rotateSum;
+
+}
+
+downBtn.onclick = function()
+{
+    rotateSum = rotateValue + "rotate(-90deg)";
+    circle.style.transform = rotateSum;
+    rotateValue = rotateSum;
+
+}
+</script>
+
+
+
+    </body>
+</html>
